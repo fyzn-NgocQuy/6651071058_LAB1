@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khám Phá Nhân Vật – ANIMEVERSE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/showcase.css" />
+</head>
+<body data-page="characters">
+  <div id="av-navbar-mount"></div>
+
+  <div class="page-wrapper">
+    <header class="subpage-hero">
+      <div class="container">
+        <p class="section-kicker">Character Encyclopedia</p>
+        <h1>Thế Giới Nhân Vật Anime</h1>
+        <p class="section-subtitle">Tìm kiếm, lọc theo tác phẩm, giới tính, vai trò và nhấn vào từng nhân vật để mở Character Showcase toàn màn hình.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-panel">
+          <div class="filter-grid">
+            <div class="filter-field">
+              <label for="char-q">Tìm tên nhân vật / anime</label>
+              <input type="text" id="char-q" placeholder="Gojo, Frieren, Luffy, Sung Jin-Woo..." />
+            </div>
+            <div class="filter-field">
+              <label for="char-anime-filter">Lọc theo Anime</label>
+              <select id="char-anime-filter"></select>
+            </div>
+            <div class="filter-field">
+              <label for="char-gender-filter">Giới tính</label>
+              <select id="char-gender-filter">
+                <option value="">Tất cả</option>
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="char-role-filter">Vai trò</label>
+              <select id="char-role-filter">
+                <option value="">Tất cả vai trò</option>
+                <option value="main">Nhân vật chính</option>
+                <option value="antagonist">Phản diện</option>
+              </select>
+            </div>
+          </div>
+          <p id="chars-count" style="margin-top:12px;font-size:0.86rem;color:var(--accent-secondary);font-weight:600;"></p>
+        </div>
+
+        <div class="anime-grid" id="chars-grid"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal mở Showcase nhân vật -->
+  <div class="av-modal" id="char-modal">
+    <div class="av-modal-body">
+      <button class="modal-close-btn" id="char-modal-close" aria-label="Đóng">&times;</button>
+      <div id="char-modal-stage"></div>
+    </div>
+  </div>
+
+  <div id="av-footer-mount"></div>
+
+  <script src="js/data-catalog.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

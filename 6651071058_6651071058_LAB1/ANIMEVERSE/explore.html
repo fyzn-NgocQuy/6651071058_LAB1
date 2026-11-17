@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khám Phá Anime – ANIMEVERSE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/showcase.css" />
+</head>
+<body data-page="explore">
+  <div id="av-navbar-mount"></div>
+
+  <div class="page-wrapper">
+    <header class="subpage-hero">
+      <div class="container">
+        <p class="section-kicker">Thư viện đa thời kỳ</p>
+        <h1>Khám Phá Kho Anime</h1>
+        <p class="section-subtitle">Tìm theo tên Nhật / Anh / Việt, lọc theo thể loại, thời kỳ, mùa phát hành, trạng thái và điểm đánh giá.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-panel">
+          <div class="filter-grid">
+            <div class="filter-field">
+              <label for="exp-query">Từ khóa (JP / EN / VI / Studio)</label>
+              <input type="text" id="exp-query" placeholder="Ví dụ: Frieren, Chú thuật, MAPPA..." />
+            </div>
+            <div class="filter-field">
+              <label for="exp-genre">Thể loại</label>
+              <select id="exp-genre"></select>
+            </div>
+            <div class="filter-field">
+              <label for="exp-era">Thời kỳ</label>
+              <select id="exp-era">
+                <option value="">Tất cả thời kỳ</option>
+                <option value="latest">Mới nổi bật 2024–2026</option>
+                <option value="modern">Hiện đại 2020–2023</option>
+                <option value="classic">Kinh điển & Huyền thoại</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="exp-season">Mùa phát hành</label>
+              <select id="exp-season">
+                <option value="">Tất cả mùa</option>
+                <option value="Winter">Đông (Winter)</option>
+                <option value="Spring">Xuân (Spring)</option>
+                <option value="Summer">Hè (Summer)</option>
+                <option value="Fall">Thu (Fall)</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="exp-status">Trạng thái</label>
+              <select id="exp-status">
+                <option value="">Tất cả trạng thái</option>
+                <option value="completed">Hoàn thành</option>
+                <option value="airing">Đang phát sóng</option>
+                <option value="upcoming">Sắp phát hành</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="exp-score">Điểm tối thiểu</label>
+              <select id="exp-score">
+                <option value="0">Mọi mức điểm</option>
+                <option value="8">Từ 8.0 trở lên</option>
+                <option value="8.5">Từ 8.5 trở lên</option>
+                <option value="8.8">Từ 8.8 trở lên</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="exp-sort">Sắp xếp theo</label>
+              <select id="exp-sort">
+                <option value="popularity">Độ phổ biến</option>
+                <option value="rating">Điểm đánh giá cao nhất</option>
+                <option value="newest">Mới nhất (2026 &rarr; cũ)</option>
+                <option value="oldest">Kinh điển nhất</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:14px;">
+            <div id="exp-suggest" style="font-size:0.84rem;color:var(--text-muted);"></div>
+            <div style="display:flex;align-items:center;gap:12px;">
+              <span id="exp-count" style="font-size:0.86rem;color:var(--accent-secondary);font-weight:600;"></span>
+              <button class="btn btn-glass btn-sm" id="exp-reset" type="button">Đặt lại bộ lọc</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="anime-grid" id="exp-grid"></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="av-footer-mount"></div>
+
+  <script src="js/data-catalog.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

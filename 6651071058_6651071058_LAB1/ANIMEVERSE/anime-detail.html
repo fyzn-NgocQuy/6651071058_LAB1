@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi Tiết Anime – ANIMEVERSE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/showcase.css" />
+</head>
+<body data-page="detail">
+  <div id="av-navbar-mount"></div>
+
+  <div class="page-wrapper">
+    <!-- Banner chi tiết riêng từng anime -->
+    <section class="detail-hero-banner" id="detail-banner">
+      <div class="detail-bg-blur" id="detail-bg-blur"></div>
+      <div class="detail-bg-scrim"></div>
+      <div class="container detail-top-grid">
+        <div class="detail-poster-box">
+          <img id="detail-poster" alt="Poster Anime" />
+        </div>
+        <div>
+          <p class="section-kicker">Hồ sơ tác phẩm</p>
+          <h1 class="hero-title" id="detail-title" style="font-size:clamp(1.8rem,3.5vw,3rem);"></h1>
+          <p class="hero-jp-title" id="detail-jp"></p>
+          <div class="hero-meta-row" id="detail-badges"></div>
+          <p style="color:#e2e8f0;font-size:0.98rem;line-height:1.7;" id="detail-desc"></p>
+          <div class="detail-specs-grid" id="detail-specs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Character Showcase (8–12 nhân vật) -->
+    <section class="section" id="character-showcase">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Character Selection Stage</p>
+            <h2 class="section-title">Hệ Thống Giới Thiệu Nhân Vật</h2>
+            <p class="section-subtitle">Hỗ trợ chuyển đổi tức thì khi rê chuột, bấm chọn hoặc vuốt. Ưu tiên ảnh PNG không nền cục bộ hoặc Official Art từ AniList.</p>
+          </div>
+        </div>
+        <div id="detail-char-showcase"></div>
+      </div>
+    </section>
+
+    <!-- Iconic Moments + Spoiler Shield + Lightbox -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Thư viện phân cảnh chính thức</p>
+            <h2 class="section-title">Iconic Moments – Khoảnh Khắc Đáng Nhớ</h2>
+          </div>
+          <label class="badge" style="cursor:pointer;padding:8px 14px;">
+            <input type="checkbox" id="spoiler-toggle" style="margin-right:6px;" />
+            Hiển thị phân cảnh có Spoiler
+          </label>
+        </div>
+        <div class="moments-grid" id="detail-moments-grid"></div>
+      </div>
+    </section>
+
+    <!-- Anime liên quan -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Đề xuất cùng phong cách</p>
+            <h2 class="section-title">Anime Liên Quan</h2>
+          </div>
+        </div>
+        <div class="anime-grid" id="detail-related"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="av-lightbox" id="av-lightbox">
+    <button class="lightbox-close" id="lb-close" aria-label="Đóng">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Ảnh trước">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lb-img" alt="Iconic Moment" />
+      <h3 id="lb-title" style="font-family:var(--font-display);margin-bottom:6px;"></h3>
+      <p id="lb-desc" style="color:var(--text-muted);font-size:0.9rem;"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Ảnh sau">&#10095;</button>
+  </div>
+
+  <div id="av-footer-mount"></div>
+
+  <script src="js/data-catalog.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

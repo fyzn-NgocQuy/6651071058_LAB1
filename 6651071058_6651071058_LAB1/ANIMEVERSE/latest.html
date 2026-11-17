@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Mới Nhất 2024–2026 (Live) – ANIMEVERSE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/showcase.css" />
+</head>
+<body data-page="latest">
+  <div id="av-navbar-mount"></div>
+
+  <div class="page-wrapper">
+    <header class="subpage-hero">
+      <div class="container">
+        <p class="section-kicker">Real-Time Seasonal Tracker</p>
+        <h1>Trung Tâm Anime Mới 2024–2026</h1>
+        <p class="section-subtitle">Đồng bộ trực tiếp theo mùa phát hành thực tế từ AniList GraphQL API, phân tách rõ dữ liệu thời gian thực và dữ liệu biên tập cục bộ.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="api-status-bar">
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+            <span class="badge badge-airing" id="latest-api-badge">Đang kiểm tra kết nối...</span>
+            <span id="latest-updated-at" style="color:var(--text-muted);"></span>
+          </div>
+          <button class="btn btn-primary btn-sm" id="latest-refresh-btn" type="button">&#8635; Làm mới dữ liệu Live</button>
+        </div>
+
+        <div class="tabs-row" id="season-2026-tabs">
+          <button class="tab-btn active" data-season="FALL" data-year="2026">Mùa Thu 2026 (Đang phát sóng)</button>
+          <button class="tab-btn" data-season="SUMMER" data-year="2026">Mùa Hè 2026</button>
+          <button class="tab-btn" data-season="SPRING" data-year="2026">Mùa Xuân 2026</button>
+          <button class="tab-btn" data-season="WINTER" data-year="2026">Mùa Đông 2026</button>
+          <button class="tab-btn" data-season="FALL" data-year="2025">Thu 2025</button>
+          <button class="tab-btn" data-season="WINTER" data-year="2025">Đông 2025</button>
+          <button class="tab-btn" data-season="FALL" data-year="2024">Thu 2024</button>
+        </div>
+
+        <div class="anime-grid" id="latest-live-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Dữ liệu biên tập cục bộ</p>
+            <h2 class="section-title">Tuyển Chọn Tiêu Điểm 2024–2026 (Có Character Showcase)</h2>
+            <p class="section-subtitle">Các tác phẩm trọng điểm đã kiểm chứng trạng thái phát hành thực tế, kèm hồ sơ nhân vật chi tiết và Iconic Moments.</p>
+          </div>
+        </div>
+        <div class="anime-grid" id="latest-curated-grid"></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="av-footer-mount"></div>
+
+  <script src="js/data-catalog.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

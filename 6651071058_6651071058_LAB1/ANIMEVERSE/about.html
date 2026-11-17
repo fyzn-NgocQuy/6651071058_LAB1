@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới Thiệu – ANIMEVERSE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/showcase.css" />
+</head>
+<body data-page="about">
+  <div id="av-navbar-mount"></div>
+
+  <div class="page-wrapper">
+    <header class="subpage-hero">
+      <div class="container">
+        <p class="section-kicker">Kiến trúc & Minh bạch dữ liệu</p>
+        <h1>Về Nền Tảng ANIMEVERSE</h1>
+        <p class="section-subtitle">Website khám phá anime & thế giới nhân vật hoạt động trực tiếp trên trình duyệt không cần localhost hay backend Java.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container" style="display:grid;gap:20px;">
+        <div class="filter-panel">
+          <h3 style="font-family:var(--font-display);margin-bottom:8px;">1. Character Showcase & Hình ảnh nhân vật</h3>
+          <p style="color:var(--text-muted);">Mỗi bộ anime hỗ trợ 8–12 nhân vật với chuyển đổi tức thì (hover/click/touch), hiệu ứng slide, scale, glow và aura đổi màu theo nhân vật. Hệ thống tự kiểm tra ảnh PNG không nền cục bộ tại <code>assets/characters/&lt;slug&gt;.png</code> trước khi sử dụng Official Character Art từ AniList API và luôn ghi rõ nguồn ảnh.</p>
+        </div>
+        <div class="filter-panel">
+          <h3 style="font-family:var(--font-display);margin-bottom:8px;">2. Cập nhật thời gian thực 2026 & Dự phòng ngoại tuyến</h3>
+          <p style="color:var(--text-muted);">Trang <strong>Anime mới 2024–2026</strong> và <strong>Bảng xếp hạng Live</strong> kết nối trực tiếp tới AniList GraphQL API và Jikan API v4, lưu cache tại <code>localStorage</code>. Khi mất kết nối Internet, website tự động chuyển sang kho dữ liệu biên tập cục bộ trong <code>js/data-catalog.js</code> để không bị lỗi trang.</p>
+        </div>
+        <div class="filter-panel">
+          <h3 style="font-family:var(--font-display);margin-bottom:8px;">3. Iconic Moments & Chế độ Spoiler</h3>
+          <p style="color:var(--text-muted);">Các phân cảnh đáng nhớ sử dụng thumbnail tập phim chính thức hoặc ảnh quảng bá từ AniList/MyAnimeList tương ứng đúng bộ anime. Mặc định làm mờ nội dung có spoiler cho tới khi người dùng chủ động bật chế độ xem Spoiler, đi kèm Lightbox hỗ trợ phím mũi tên và ESC.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="av-footer-mount"></div>
+
+  <script src="js/data-catalog.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

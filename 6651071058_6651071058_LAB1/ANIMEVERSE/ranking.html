@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bảng Xếp Hạng Anime – ANIMEVERSE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/showcase.css" />
+</head>
+<body data-page="ranking">
+  <div id="av-navbar-mount"></div>
+
+  <div class="page-wrapper">
+    <header class="subpage-hero">
+      <div class="container">
+        <p class="section-kicker">Community & Live Charts</p>
+        <h1>Bảng Xếp Hạng Anime & Nhân Vật</h1>
+        <p class="section-subtitle">Tổng hợp Top 10 phổ biến, điểm cao, thịnh hành trực tiếp từ AniList API và bảng vàng từng năm 2024–2026.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="tabs-row" id="ranking-tabs">
+          <button class="tab-btn active" data-tab="popular">Top 10 Nổi Tiếng</button>
+          <button class="tab-btn" data-tab="rated">Top 10 Điểm Cao</button>
+          <button class="tab-btn" data-tab="trending-live">Top 10 Thịnh Hành (Live API)</button>
+          <button class="tab-btn" data-tab="characters">Top Nhân Vật Yêu Thích</button>
+          <button class="tab-btn" data-tab="2024">Nổi bật 2024</button>
+          <button class="tab-btn" data-tab="2025">Nổi bật 2025</button>
+          <button class="tab-btn" data-tab="2026">Nổi bật 2026</button>
+        </div>
+
+        <div class="api-status-bar">
+          <span id="ranking-source-note">Đang tải dữ liệu bảng xếp hạng...</span>
+          <span class="badge badge-live">Minh bạch nguồn điểm số</span>
+        </div>
+
+        <div class="ranking-list" id="ranking-list"></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="av-footer-mount"></div>
+
+  <script src="js/data-catalog.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANIMEVERSE – Khám Phá Thế Giới Anime & Nhân Vật</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/showcase.css" />
+</head>
+<body data-page="home">
+  <div id="av-navbar-mount"></div>
+
+  <div class="page-wrapper">
+    <!-- Hero Banner Slideshow Parallax -->
+    <section class="hero-slideshow" id="av-hero-slideshow">
+      <div class="hero-slides-bg" id="hero-bg-wrap"></div>
+      <div class="hero-gradient-overlay"></div>
+      <div class="container hero-content-grid">
+        <div>
+          <span class="hero-kicker">&#10022; Anime Spotlight &bull; Đa Thời Kỳ</span>
+          <h1 class="hero-title" id="hero-title">Frieren: Beyond Journey's End</h1>
+          <p class="hero-jp-title" id="hero-jp"></p>
+          <div class="hero-meta-row" id="hero-meta"></div>
+          <p class="hero-desc" id="hero-desc"></p>
+          <div class="hero-cta-row">
+            <a href="#" id="hero-btn-detail" class="btn btn-primary">Khám phá ngay</a>
+            <a href="#" id="hero-btn-char" class="btn btn-glass">Xem nhân vật</a>
+          </div>
+          <div class="hero-controls">
+            <button class="hero-arrow" id="hero-prev" aria-label="Slide trước">&#10094;</button>
+            <div class="hero-dots" id="hero-dots"></div>
+            <button class="hero-arrow" id="hero-next" aria-label="Slide sau">&#10095;</button>
+          </div>
+        </div>
+        <div class="hero-poster-card">
+          <img id="hero-poster-img" alt="Hero Poster" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Anime đang thịnh hành -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Xu hướng cộng đồng</p>
+            <h2 class="section-title">Anime Đang Thịnh Hành</h2>
+          </div>
+          <a href="ranking.html" class="btn btn-glass btn-sm">Xem bảng xếp hạng &rarr;</a>
+        </div>
+        <div class="anime-row-scroll" id="home-trending"></div>
+      </div>
+    </section>
+
+    <!-- Character Showcase nổi bật -->
+    <section class="section reveal" id="home-showcase-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Priority #1 &bull; Character Gallery</p>
+            <h2 class="section-title">Character Showcase Tương Tác</h2>
+            <p class="section-subtitle">Rê chuột hoặc chạm vào dải nhân vật bên dưới để chuyển đổi mượt mà cùng hiệu ứng ánh sáng riêng theo từng nhân vật.</p>
+          </div>
+          <a href="characters.html" class="btn btn-glass btn-sm">Toàn bộ nhân vật &rarr;</a>
+        </div>
+        <div class="tabs-row" id="home-char-switcher"></div>
+        <div id="home-char-showcase"></div>
+      </div>
+    </section>
+
+    <!-- Anime mới nhất 2024–2026 -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Cập nhật giai đoạn mới</p>
+            <h2 class="section-title">Anime Nổi Bật 2024–2026</h2>
+          </div>
+          <a href="latest.html" class="btn btn-primary btn-sm">Lịch 2026 Thời Gian Thực &rarr;</a>
+        </div>
+        <div class="anime-row-scroll" id="home-latest"></div>
+      </div>
+    </section>
+
+    <!-- Anime kinh điển -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Di sản vượt thời gian</p>
+            <h2 class="section-title">Anime Kinh Điển Nhiều Thế Hệ</h2>
+          </div>
+          <a href="explore.html?era=classic" class="btn btn-glass btn-sm">Xem tất cả kinh điển &rarr;</a>
+        </div>
+        <div class="anime-row-scroll" id="home-classic"></div>
+      </div>
+    </section>
+
+    <!-- Anime được đánh giá cao -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Điểm số xuất sắc</p>
+            <h2 class="section-title">Anime Được Đánh Giá Cao</h2>
+          </div>
+          <a href="ranking.html" class="btn btn-glass btn-sm">Top Điểm Cao &rarr;</a>
+        </div>
+        <div class="anime-row-scroll" id="home-top-rated"></div>
+      </div>
+    </section>
+
+    <!-- Anime theo thể loại -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">12 Thể Loại Trọng Tâm</p>
+            <h2 class="section-title">Khám Phá Theo Thể Loại</h2>
+          </div>
+          <a href="genres.html" class="btn btn-glass btn-sm">Trang Thể loại &rarr;</a>
+        </div>
+        <div class="genre-grid" id="home-genres"></div>
+      </div>
+    </section>
+
+    <!-- Anime nghệ thuật / âm nhạc / cốt truyện đặc biệt -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Tuyển chọn biên tập</p>
+            <h2 class="section-title">Anime Có Phong Cách & Đồ Họa Đặc Biệt</h2>
+          </div>
+        </div>
+        <div class="anime-row-scroll" id="home-notable"></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="av-footer-mount"></div>
+
+  <script src="js/data-catalog.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
